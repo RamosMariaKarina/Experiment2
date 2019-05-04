@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int sum, start1, start2, numofTerms;
+	
+	start1 =0;
+	start2 =1;
+	
+	cout << start1 << "," << start2 << ",";
+	
+	
+	
+	for (numofTerms==1; numofTerms<=19; numofTerms++)
+	{
+			sum = start1+start2;
+			start1=start2;
+			start2=sum;
+			cout << sum << ",";
+		
+	}
+
+
+	return 0;	
+}
+
