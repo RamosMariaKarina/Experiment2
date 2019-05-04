@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	
+int galUsed, OutBal;
+bool errorGal;
+
+cout << "Enter the number of Gallons Consumed: "; cin >> galUsed;
+cout << "Press 1 if you have a remaining OutBal and 0 if none: "; cin >>OutBal;
+cout << "------------------------------------------------------" << endl;
+
+switch (OutBal)
+	{
+		case 1:
+			if (galUsed <0)
+				errorGal =1; 
+			else
+				cout << "Your outstanding Bill is : P" << 35 + (1.10*galUsed) +20 << endl;
+			break;
+		case 0:
+			if (galUsed <0)
+				errorGal =1;
+			else
+				cout << "Your outstanding Bill is : P" << 35 + (1.10*galUsed) << endl;
+			break;
+		default:
+			cout << "You have entered an invalid digit." << endl;
+	}
+	
+if (errorGal)
+	cout << "You have entered invalid number of gallons used." << endl;
+
+_getch();
+return 0;	
+}
