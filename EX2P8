@@ -1,0 +1,21 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	
+	int num, multiplier; 
+	
+	cout << "Multiplication Table Generator" << endl;
+	cout << "Enter a number: "; cin >> num;
+	
+	for (multiplier==1; multiplier <=10; multiplier++)
+	{
+		cout << multiplier << "*" << num << "=" << multiplier*num << endl;
+	}
+	
+	_getch();
+	return 0;
+}
