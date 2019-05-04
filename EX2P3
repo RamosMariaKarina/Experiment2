@@ -1,0 +1,49 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+
+	int x, y;
+	const float z = 2.5;
+	float Val1;
+	double w, a;
+
+	cout << "Enter the value of x: "; cin >> x;
+	cout << "Enter the value of y: "; cin >> y;
+
+	switch (x)
+		{
+			case 1:
+				if (y>1 || y<5)
+					Val1 = x*y*z;
+				else if (y >=5)
+					Val1= x + y/z;
+				break;
+				
+			case 2:
+				if (y <= 5)
+				// a will only be used in this condition and case
+					a = (x-y)/z;
+				else if (y >5)
+					w = static_cast <double>(y+z);
+					Val1 = x - (pow (w, 0.5));
+				break;
+			default:
+				Val1 = x + y + z;
+		}
+	
+	if (a <0)
+		Val1= -1*a;
+		else 
+		Val1= a;
+		
+	cout << "V = " << setprecision(2) << Val1 << endl;
+
+	_getch();
+	return 0;
+}
