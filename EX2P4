@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+
+{
+	double num1, num2, num3;
+	
+	cout << "Enter your first number: "; cin >> num1;
+	cout << "Enter your second number: "; cin >> num2;
+	cout << "Enter your third number: "; cin >> num3;
+	
+	if (num1 > num2)
+		if (num3 > num1)
+			cout << "The largest number is " << num3;
+		else
+			cout << "The largset number is " << num1;
+	else if (num2 > num1)
+		if (num3 > num2)
+			cout << "The largest number is "<< num3;
+		else
+			cout << "The largest number is "<< num2;
+			
+	_getch();
+	return 0;
+	
+}
