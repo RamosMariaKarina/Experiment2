@@ -1,0 +1,24 @@
+#include <iostream>
+#include <conio.h>>
+
+using namespace std;
+
+int main()
+{
+	int columns, rows, table, Xaxis, Yaxis;
+	cout << "Input number of columns: "; cin >> columns; 
+	cout << "Input number of rows: "; cin >> rows;
+	
+	for (Xaxis=1; Xaxis<=rows; Xaxis++)
+	{
+		for (Yaxis=1; Yaxis<=columns; Yaxis++)
+		{
+			cout << "*";
+		}
+		cout << "\n";
+	}
+	
+	
+	_getch();
+	return 0;
+}
